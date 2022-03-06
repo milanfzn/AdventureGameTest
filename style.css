@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(9, 100px);
+}
+.grid-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(243, 233, 140, 0.911);
+  border: 2px solid black;
+  padding: 3rem;
+}
+
+.grid-container .house {
+  background-color: rgba(204, 141, 59, 0.801);
+}
+
+.grid-container .building {
+  background-color: rgb(211, 62, 62);
+}
+
+.grid-container .deepForest {
+  background-color: rgb(47, 70, 47);
+}
+
+.grid-container .forest {
+  background-color: rgb(56, 104, 56);
+}
+.grid-container .bushes {
+  background-color: rgb(94, 144, 94);
+}
+.grid-container .grass {
+  background-color: rgb(146, 204, 146);
+}
+.grid-container .road {
+  background-color: rgb(83, 83, 83);
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.interface .senses > button,
+input {
+  padding: 1rem;
+  margin: 5px;
+  background-color: rgb(180, 240, 83);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  width: 10em;
+}
+
+.interface label {
+  position: relative;
+  margin: 15px;
+}
+input[type="text"] {
+  border: none;
+  width: 400px;
+  height: 60px;
+  margin: 0 10px;
+  outline: none;
+}
+.interface label > button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(180, 240, 83);
+  border: none;
+  border-radius: 5%;
+  padding: 0 15px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
